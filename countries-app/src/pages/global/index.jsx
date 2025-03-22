@@ -22,8 +22,8 @@ export default function GlobalView() {
 		datasets: [
 			{
 				label: "Population",
-				backgroundColor: "rgb(0, 0, 0)", // Doesn't really matter what colours we put, values here will all be 0
-				borderColor: "rgb(0, 0, 0)",
+				backgroundColor: COLOURS[0],
+				borderColor: COLOURS[0],
 				data: CONTINENTS.map((c) => {
 					return 0
 				}),
