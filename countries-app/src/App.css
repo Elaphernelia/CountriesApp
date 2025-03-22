@@ -1,0 +1,47 @@
+#root {
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* noShow is assigned to div components that we want on the page when the data isn't showing yet*/
+#noshow {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+/* We set the error image height to 70% of the screen's height */
+#errImg {
+	height: 70vh;
+}
+
+/* For smaller screens, we set the error image width to 70% of the screen's width */
+@media (max-width: 479px) {
+	#errImg {
+		width: 70vw;
+		height: auto;
+	}
+}
+
+.card {
+	padding: 2em;
+}
+
+.loading-icon {
+	color: #f9b828;
+	animation: loading-spin 2s infinite;
+}
+
+.navBar-icon {
+	color: #ffffff;
+}
+
+@keyframes loading-spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(720deg);
+	}
+}
